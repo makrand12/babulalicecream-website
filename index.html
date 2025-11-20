@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Business Name</title>
+  <style>
+    :root {
+      --color-background: var(--color-cream-50, #FCFCF9);
+      --color-surface: var(--color-cream-100, #FFFFFD);
+      --color-text: var(--color-slate-900, #13343B);
+      --color-primary: var(--color-teal-500, #21808D);
+      --color-primary-hover: var(--color-teal-600, #1D7480);
+      --color-btn-primary-text: var(--color-cream-50, #FCFCF9);
+      --radius-base: 8px;
+      --space-16: 16px;
+      --space-24: 24px;
+      --font-size-3xl: 24px;
+      --font-size-base: 14px;
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+      --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    html {
+      font-family: var(--font-family-base);
+      background: var(--color-background);
+      color: var(--color-text);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: var(--space-24);
+    }
+    header {
+      background: var(--color-surface);
+      box-shadow: var(--shadow-md);
+      padding: var(--space-24);
+      border-radius: var(--radius-base);
+      margin-bottom: var(--space-16);
+      text-align: center;
+    }
+    h1 {
+      font-size: var(--font-size-3xl);
+      margin: 0 0 var(--space-16) 0;
+      color: var(--color-primary);
+    }
+    nav {
+      margin-bottom: var(--space-24);
+    }
+    nav a {
+      margin-right: var(--space-16);
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: var(--font-size-base);
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--color-primary-hover);
+    }
+    .hero {
+      padding: var(--space-24);
+      background: var(--color-surface);
+      border-radius: var(--radius-base);
+      box-shadow: var(--shadow-md);
+      margin-bottom: var(--space-24);
+      text-align: center;
+    }
+    .hero img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: var(--space-16);
+    }
+    .btn {
+      display: inline-block;
+      background: var(--color-primary);
+      color: var(--color-btn-primary-text);
+      padding: var(--space-16) var(--space-24);
+      border-radius: var(--radius-base);
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      margin-top: var(--space-16);
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: var(--color-primary-hover);
+    }
+    section {
+      margin-bottom: var(--space-24);
+    }
+    .card {
+      background: var(--color-surface);
+      border-radius: var(--radius-base);
+      box-shadow: var(--shadow-md);
+      padding: var(--space-24);
+      margin-bottom: var(--space-16);
+    }
+    footer {
+      text-align: center;
+      padding: var(--space-16);
+      color: var(--color-primary);
+      background: var(--color-surface);
+      border-top: 1px solid #eee;
+      margin-top: var(--space-24);
+      border-radius: var(--radius-base);
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: var(--space-16);
+      }
+      header, .hero, .card, footer {
+        padding: var(--space-16);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Babulal Icecream</h1>
+      <p style="margin:0;font-size:14px;color:var(--color-text-secondary);">Innovation, Imagination & Your Inspiration Since 1968</p>
+      <nav>
+        <a href="#flavors">Our Flavors</a>
+        <a href="#about">Our Story</a>
+        <a href="#locations">Locations</a>
+        <a href="#franchise">Franchise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="https://pplx-res.cloudinary.com/image/upload/v1763649435/search_images/50f5b97dac11863611dcd2cc488dcf8b891feea9.jpg" alt="Premium Ice Cream Display" style="width:100%;max-width:600px;height:auto;border-radius:var(--radius-base);"/>
+      <h2>Scoops of Joy Since 1968</h2>
+      <p>Experience 58+ years of premium quality ice cream made with the finest ingredients. From classic favorites like Keshar Pista and Old Vanilla to unique flavors like American Dry Fruit and Lonavala - every scoop tells a story of tradition and taste.</p>
+      <a href="#flavors" class="btn">Explore Our Flavors</a>
+    </section>
+
+    <section id="flavors">
+      <h3>Our Premium Flavors</h3>
+      <div class="card">
+        <strong>🍦 Classic Favorites</strong>
+        <p><strong>Old Vanilla:</strong> Our timeless signature since 1968 – smooth, creamy, and rich in real vanilla flavor. A nostalgic scoop that never goes out of style.</p>
+        <p><strong>Keshar Pista:</strong> A regal blend of aromatic saffron and crunchy pistachios, delivering authentic Indian flavors in every bite.</p>
+      </div>
+      <div class="card">
+        <strong>🌟 Specialty Creations</strong>
+        <p><strong>American Dry Fruit:</strong> Loaded with premium cashews, almonds, and raisins for a rich, indulgent experience.</p>
+        <p><strong>Lonavala:</strong> Our signature exotic flavor that captures the essence of premium ingredients and craftsmanship.</p>
+      </div>
+      <div class="card">
+        <strong>🍫 Popular Choices</strong>
+        <p>Chocolate, Strawberry, Mango, Butterscotch, and many more delicious varieties crafted with locally sourced, fresh ingredients to ensure the finest taste in every scoop.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>Our Story</h3>
+      <div class="card">
+        <h4 style="color:var(--color-primary);margin-bottom:var(--space-16);">A Legacy of 58+ Years</h4>
+        <p>
+          Founded in <strong>1968</strong> by <strong>Babulal Dagaji Chaudhari</strong>, Babulal Icecream began with a simple mission: to deliver premium quality milk products and ice cream that brings joy to every customer.
+        </p>
+        <p>
+          The business has been lovingly expanded by his three sons - <strong>Ramesh, Mahesh, and Shashikant Babulal Chaudhari</strong> - who continue the family tradition of excellence, innovation, and pure love in every scoop.
+        </p>
+        <p>
+          Today, Babulal Icecream has become a household name in Nagpur and beyond, known for exceptional quality, diverse flavors, and a <strong>Zomato rating of 4.3★</strong>. We're proud to serve ice cream made with the finest ingredients sourced locally to ensure freshness and authentic taste.
+        </p>
+      </div>
+    </section>
+
+    <section id="locations">
+      <h3>Visit Us</h3>
+      <div class="card">
+        <strong>📍 Nagpur - Ramdaspeth</strong>
+        <p>10, Central Bazar Road, Opposite Kalpana Building, Beside BRIM, Ramdaspeth, Nagpur, Maharashtra 440010</p>
+        <p><strong>Phone:</strong> 090281 73111</p>
+        <p><strong>Hours:</strong> 2:00 PM - 1:45 AM (Next Day)</p>
+      </div>
+      <div class="card">
+        <strong>📍 Other Locations</strong>
+        <p>Babulal Icecream Warora | Babulal Cream Camp</p>
+        <p>Find us on Swiggy, Zomato, and other delivery platforms for convenient home delivery!</p>
+      </div>
+    </section>
+
+    <section id="franchise">
+      <h3>Franchise Opportunities</h3>
+      <div class="card">
+        <h4 style="color:var(--color-primary);margin-bottom:var(--space-16);">Join the Babulal Icecream Family</h4>
+        <p>We're inviting franchise partners to be part of our growing success story!</p>
+        <p><strong>Why Invest in Babulal Icecream?</strong></p>
+        <ul style="margin:var(--space-16) 0;padding-left:20px;">
+          <li>✓ Legacy of 58+ Years with significant brand potential</li>
+          <li>✓ Impressive Return On Investment</li>
+          <li>✓ Own Manufacturing &amp; Supplies</li>
+          <li>✓ Diverse Range of Premium Ice-Cream Flavours</li>
+          <li>✓ Quality and Value for Money</li>
+          <li>✓ Attractive Growing Market - Indian ice cream market expected to reach INR 436.2 Billion by 2027</li>
+        </ul>
+        <p><strong>Franchise Model:</strong> Parlour | <strong>Area Required:</strong> 400-800 Sq. Ft.</p>
+        <p><strong>Contact us at 9028173111 to learn more!</strong></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <div class="card">
+        <form id="contactForm">
+          <div style="margin-bottom:12px;">
+            <label for="name">Name</label><br/>
+            <input id="name" name="name" type="text" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;"/>
+          </div>
+          <div style="margin-bottom:12px;">
+            <label for="email">Email</label><br/>
+            <input id="email" name="email" type="email" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;"/>
+          </div>
+          <div style="margin-bottom:12px;">
+            <label for="message">Message</label><br/>
+            <textarea id="message" name="message" rows="4" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="result" style="margin-top:10px;font-weight:500;color:var(--color-primary);"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Babulal Icecream. All rights reserved.</p>
+      <p style="margin-top:8px;font-size:12px;">Innovation, Imagination &amp; Your Inspiration Since 1968</p>
+      <p style="margin-top:8px;">Follow us: <a href="https://www.instagram.com/babulal_icecream_nagpur/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);">Instagram</a> | <a href="https://www.facebook.com/p/Babulal-Icecream-Parlour-Nagpur-61573640438046/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);">Facebook</a></p>
+    </footer>
+  </div>
+  <script>
+    // Simple JS for contact form confirmation (no data sent)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('result').textContent =
+        'Thank you for contacting us! We will reply soon.';
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+</body>
+</html>
