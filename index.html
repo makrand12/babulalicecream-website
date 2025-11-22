@@ -3,29 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Babulal Ice Cream - Since 1968 | Premium Milk-Based Ice Creams</title>
-  <link rel="icon" href="logo.png" type="image/png">
+  <title>Babulal Ice Cream - A Legacy of Taste Since 1968</title>
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #f8f9fd; color: #223885; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #f8f9fd; color: #223885; font-family: 'Lato', 'Segoe UI', sans-serif; }
 
     header { background: #223885; color: #FFD700; padding: 30px 0; text-align: center; }
     header img { height: 180px; margin-bottom: 15px; }
-    header h1 { font-size: 2.5em; margin: 10px 0 5px; }
-    header p { font-size: 1.2em; }
+    header h1 { font-size: 2.5em; margin: 10px 0 5px; font-family: 'Playfair Display', serif; }
+    header p { font-size: 1.2em; font-family: 'Lato', sans-serif; }
 
     nav { background: #111e4b; text-align: center; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
-    nav a { color: #FFD700; text-decoration: none; font-weight: bold; margin: 0 18px; font-size: 16px; transition: color 0.3s; }
+    nav a { color: #FFD700; text-decoration: none; font-weight: bold; margin: 0 15px; font-size: 15px; transition: color 0.3s; }
     nav a:hover { color: #e8006f; }
 
     .hero { background: linear-gradient(135deg, #e8006f 0%, #c40058 100%); color: #fff; padding: 50px 20px; text-align: center; }
-    .hero h2 { font-size: 2.2em; margin-bottom: 15px; }
+    .hero h2 { font-size: 2.2em; margin-bottom: 15px; font-family: 'Playfair Display', serif; }
     .hero p { font-size: 1.1em; max-width: 800px; margin: 0 auto; line-height: 1.6; }
 
     .section { padding: 40px 20px; max-width: 1100px; margin: 30px auto; background: #fff; border-radius: 20px; box-shadow: 0 8px 30px rgba(34, 56, 133, 0.1); }
-    .section h2 { color: #e8006f; font-size: 2em; margin-bottom: 20px; text-align: center; }
-    .section h3 { color: #223885; font-size: 1.5em; margin: 20px 0 10px; }
+    .section h2 { color: #e8006f; font-size: 2em; margin-bottom: 20px; text-align: center; font-family: 'Playfair Display', serif; }
+    .section h3 { color: #223885; font-size: 1.5em; margin: 20px 0 10px; font-family: 'Playfair Display', serif; }
     .section p, .section li { line-height: 1.8; font-size: 1.05em; }
+
+    .heritage-section { background: linear-gradient(135deg, #fff9e6 0%, #fffbf0 100%); }
+    .founder-image { text-align: center; margin: 30px 0; }
+    .founder-image img { max-width: 400px; width: 100%; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); border: 4px solid #FFD700; }
+    .founder-caption { font-style: italic; color: #223885; margin-top: 15px; font-size: 1.1em; }
+
+    .generation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 30px 0; }
+    .generation-card { background: white; border-left: 4px solid #e8006f; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .generation-card h4 { color: #e8006f; margin-bottom: 10px; font-family: 'Playfair Display', serif; font-size: 1.2em; }
+    .generation-card ul { list-style: none; padding: 0; }
+    .generation-card li { padding: 8px 0; color: #223885; font-weight: 500; }
+    .generation-card li:before { content: "→ "; color: #FFD700; font-weight: bold; }
+
+    .timeline { position: relative; padding: 20px 0; margin: 40px 0; }
+    .timeline:before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: #e8006f; }
+    .timeline-item { display: flex; align-items: center; margin-bottom: 40px; position: relative; }
+    .timeline-item:nth-child(odd) { flex-direction: row-reverse; }
+    .timeline-year { background: #e8006f; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2em; position: relative; z-index: 2; margin: 0 40px; font-family: 'Playfair Display', serif; }
+    .timeline-content { flex: 1; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+    .heritage-highlights { background: linear-gradient(135deg, #223885 0%, #111e4b 100%); color: white; padding: 30px; border-radius: 15px; margin: 30px 0; }
+    .heritage-highlights h3 { color: #FFD700; font-family: 'Playfair Display', serif; margin-bottom: 15px; }
+    .heritage-highlights ul { list-style: none; padding-left: 0; }
+    .heritage-highlights li { padding: 10px 0; padding-left: 30px; position: relative; }
+    .heritage-highlights li:before { content: "★"; color: #FFD700; position: absolute; left: 0; font-size: 1.3em; }
 
     .special-features { background: #fff9e6; border-left: 5px solid #FFD700; padding: 20px; margin: 20px 0; border-radius: 10px; }
     .special-features ul { list-style: none; padding-left: 0; }
@@ -34,7 +60,7 @@
 
     .flavor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
     .flavor-cat { background: #f8f9fd; border: 2px solid #e8006f; border-radius: 15px; padding: 25px; }
-    .flavor-cat h3 { color: #e8006f; margin-bottom: 15px; text-align: center; }
+    .flavor-cat h3 { color: #e8006f; margin-bottom: 15px; text-align: center; font-family: 'Playfair Display', serif; }
     .flavor-list { list-style: none; }
     .flavor-list li { padding: 8px 10px; margin: 5px 0; background: white; border-radius: 8px; border-left: 3px solid #223885; }
 
@@ -46,25 +72,25 @@
     .testimonial-rating { color: #FFD700; font-size: 1.2em; margin-top: 5px; }
 
     .instagram-widget { max-width: 800px; margin: 30px auto; padding: 20px; background: linear-gradient(135deg, #f8f9fd 0%, #fff 100%); border-radius: 15px; border: 2px solid #e8006f; text-align: center; }
-    .instagram-widget h3 { color: #e8006f; margin-bottom: 20px; }
+    .instagram-widget h3 { color: #e8006f; margin-bottom: 20px; font-family: 'Playfair Display', serif; }
     .instagram-button { display: inline-block; background: linear-gradient(135deg, #fd5 0%, #ff543e 50%, #c837ab 100%); color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin-top: 15px; transition: transform 0.3s; }
     .instagram-button:hover { transform: scale(1.05); }
 
     .order-section { text-align: center; background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%); margin-top: 30px; border-radius: 20px; padding: 40px 20px; }
-    .order-section h2 { color: #223885; margin-bottom: 25px; }
+    .order-section h2 { color: #223885; margin-bottom: 25px; font-family: 'Playfair Display', serif; }
     .order-buttons { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
     .order-btn { display: inline-flex; align-items: center; background: white; color: #223885; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
     .order-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
     .order-btn svg { width: 40px; height: 40px; margin-right: 10px; }
 
     .franchise-section { background: linear-gradient(135deg, #223885 0%, #111e4b 100%); color: white; padding: 40px 20px; border-radius: 20px; }
-    .franchise-section h2 { color: #FFD700; text-align: center; margin-bottom: 20px; }
+    .franchise-section h2 { color: #FFD700; text-align: center; margin-bottom: 20px; font-family: 'Playfair Display', serif; }
     .franchise-section p { text-align: center; margin-bottom: 30px; font-size: 1.1em; }
     .franchise-section iframe { width: 100%; height: 2200px; border: none; border-radius: 15px; background: white; }
 
     .contact-block { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
     .branch { background: linear-gradient(135deg, #f8f9fd 0%, #e8f1ff 100%); border: 2px solid #223885; border-radius: 15px; padding: 30px; text-align: center; }
-    .branch h3 { color: #e8006f; margin-bottom: 15px; font-size: 1.5em; }
+    .branch h3 { color: #e8006f; margin-bottom: 15px; font-size: 1.5em; font-family: 'Playfair Display', serif; }
     .branch p { color: #223885; line-height: 1.8; }
     .branch a { display: inline-block; margin-top: 15px; background: #e8006f; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s; }
     .branch a:hover { transform: scale(1.05); background: #c40058; }
@@ -74,43 +100,142 @@
     .socials a:hover { transform: scale(1.1); }
     .socials svg { width: 50px; height: 50px; }
 
-    footer { margin-top: 50px; background: #223885; color: #FFD700; text-align: center; padding: 30px; font-size: 1.1em; border-radius: 20px 20px 0 0; }
+    .videos-section { max-width: 1000px; margin: 40px auto; }
+    .videos-section h2 { text-align: center; color: #e8006f; margin-bottom: 30px; font-size: 2em; font-family: 'Playfair Display', serif; }
+    .video-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; justify-items: center; }
+    .video-container video { width: 100%; max-width: 320px; height: auto; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+
+    footer { margin-top: 50px; background: #223885; color: #FFD700; text-align: center; padding: 30px; font-size: 1em; border-radius: 20px 20px 0 0; }
+    footer p { margin: 5px 0; }
 
     @media (max-width: 768px) {
       header img { height: 140px; }
       header h1 { font-size: 2em; }
       .hero h2 { font-size: 1.8em; }
-      nav a { margin: 0 8px; font-size: 14px; }
+      nav a { margin: 0 8px; font-size: 13px; }
       .order-buttons { flex-direction: column; }
       .franchise-section iframe { height: 2500px; }
+      .timeline:before { left: 20px; }
+      .timeline-item { flex-direction: column !important; text-align: center; }
+      .timeline-year { margin: 20px 0; }
+      .founder-image img { max-width: 300px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Babulal Ice Cream Logo">
+  <img src="logo.jpg" alt="Babulal Ice Cream Logo">
   <h1>Babulal Ice Cream</h1>
-  <p>Serving Happiness Since 1968</p>
+  <p>A Legacy of Taste Since 1968</p>
 </header>
 
 <nav>
+  <a href="#heritage">Our Heritage</a>
   <a href="#about">About</a>
   <a href="#menu">Flavours</a>
   <a href="#testimonials">Reviews</a>
   <a href="#gallery">Gallery</a>
+  <a href="#videos">Videos</a>
   <a href="#order">Order Online</a>
   <a href="#franchise">Franchise</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-  <h2>Babulal Ice Cream – Since 1968 | Premium Milk-Based Ice Creams</h2>
-  <p>Welcome to Babulal Ice Cream, where tradition meets taste since 1968! Now in Ramdaspeth, Nagpur, we serve 100% pure milk-based ice creams, falooda, badam shakes, lassi, and coffee — made with real ingredients and zero palm oil.</p>
+  <h2>Three Generations of Excellence</h2>
+  <p>For over 56 years, Babulal Ice Cream has been serving authentic, pure milk-based ice creams made with real ingredients and zero palm oil. From a small stall in Warora to the hearts of Nagpur, our legacy continues.</p>
+</div>
+
+<div class="section heritage-section" id="heritage">
+  <h2>The Visionary Behind the Brand</h2>
+
+  <div class="founder-image">
+    <img src="founder.jpg" alt="Late Shri Babulal Dagaji Chaudhari - Founder">
+    <p class="founder-caption">The Man Who Started It All - 1968<br><strong>Late Shri Babulal Dagaji Chaudhari</strong></p>
+  </div>
+
+  <p style="text-align: center; font-size: 1.15em; margin-bottom: 20px;">The story of Babulal Ice Cream is a testament to resilience, vision, and the power of mentorship. Our journey began in 1968 in the town of Warora. Our founder, Shri Babulal Dagaji Chaudhari, was a hardworking man supporting his family by distributing newspapers.</p>
+
+  <p>His life changed when his mentor, <strong>Shri Annaji Wankhede</strong>, recognized his potential and offered a piece of advice that would shape the future: <em>"Babulal, you should start an ice cream business."</em></p>
+
+  <p>Inspired by this guidance, Shri Babulalji rented a small space from the Vitthal Mandir Devasthan at Gandhi Chowk (Gol Bazar) and established <strong>"Babulal Cold Drinks House."</strong> What started as a humble stall has, over five decades, blossomed into one of the most trusted names in the region.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">1968</div>
+      <div class="timeline-content">
+        <h3>The Beginning</h3>
+        <p>Shri Babulal Dagaji Chaudhari establishes "Babulal Cold Drinks House" at Gandhi Chowk, Warora. A small stall with big dreams.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">1990s</div>
+      <div class="timeline-content">
+        <h3>Second Generation Takes Over</h3>
+        <p>The second generation standardizes quality and cements the reputation of Babulal Ice Cream across Warora and surrounding areas.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2020s</div>
+      <div class="timeline-content">
+        <h3>Expansion to Nagpur</h3>
+        <p>Third generation drives expansion to Nagpur, opening a branch in Ramdaspeth. Fresh ideas meet timeless taste.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2025</div>
+      <div class="timeline-content">
+        <h3>57 Years & Growing</h3>
+        <p>Celebrating 57 years of excellence with plans to expand across the entire Vidarbha region.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 50px;">A Family Tradition: Three Generations of Excellence</h2>
+  <p style="text-align: center; margin-bottom: 30px;">We are proud to be a family-run enterprise where the secret ingredient has always been dedication. The small sapling planted by our founder was nurtured into a massive tree by the second generation, who standardized our quality and cemented our reputation.</p>
+
+  <div class="generation-grid">
+    <div class="generation-card">
+      <h4>Second Generation<br>Carrying the Torch Forward</h4>
+      <ul>
+        <li>Shri Ramesh Babulal Chaudhari</li>
+        <li>Shri Mahesh Babulal Chaudhari</li>
+        <li>Shri Shashikant Babulal Chaudhari</li>
+      </ul>
+    </div>
+
+    <div class="generation-card">
+      <h4>Third Generation<br>Innovating for the Future</h4>
+      <ul>
+        <li>Makrand Chaudhari</li>
+        <li>Niraj Chaudhari</li>
+        <li>Ashish Chaudhari</li>
+        <li>Vedant Chaudhari</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="heritage-highlights">
+    <h3>Our Footprint: From Warora to Nagpur</h3>
+    <p>For over 56 years, Warora has been our home. However, the overwhelming love for our flavors gave us the confidence to take a significant leap.</p>
+    <ul>
+      <li><strong>Est. 1968</strong> - Founded in Warora by Late Shri Babulal Dagaji Chaudhari</li>
+      <li><strong>Headquarters:</strong> Gandhi Chowk, Warora, Maharashtra</li>
+      <li><strong>New Branch:</strong> Central Bazar Road, Ramdaspeth, Nagpur</li>
+      <li><strong>Vision:</strong> Expanding across Vidarbha region</li>
+      <li><strong>Email:</strong> babulalicecream@gmail.com</li>
+    </ul>
+  </div>
+
+  <p style="text-align: center; font-size: 1.2em; margin-top: 30px; font-style: italic; color: #e8006f;"><strong>We are not stopping here. As we step into our 57th year, our mission is to expand the Babulal Ice Cream family further, ensuring that every corner of the Vidarbha region can enjoy the irresistible taste that started it all.</strong></p>
 </div>
 
 <div class="section" id="about">
-  <h2>Our Heritage & Values</h2>
+  <h2>Our Values & Commitment</h2>
   <p>Every scoop and sip reflects our rich heritage of quality, purity, and unmatched flavour. Loved for our iconic Old Vanilla, indulgent Badam Shake, and creamy falooda blends, we bring the authentic taste of India's dessert legacy to your plate.</p>
 
   <div class="special-features">
@@ -120,15 +245,13 @@
       <li>Only real milk, nuts, and authentic ingredients</li>
       <li>Signature classics + seasonal specials</li>
       <li>Warm service, clean ambience, and rich flavours</li>
+      <li>56+ years of trust and tradition</li>
     </ul>
   </div>
-
-  <p style="margin-top: 20px;">Founded by Babulal Dagaji Chaudhari in 1968, Babulal Icecream is a legacy of trust and taste. Our main branch is rooted in Warora, and now we delight Nagpur's ice cream lovers too!</p>
 </div>
 
 <div class="section" id="menu">
   <h2>Our Premium Flavours</h2>
-
   <div class="flavor-grid">
     <div class="flavor-cat">
       <h3>International Flavours ⭐️</h3>
@@ -143,7 +266,6 @@
         <li>Italian Pistachio</li>
       </ul>
     </div>
-
     <div class="flavor-cat">
       <h3>Super Premium Flavours</h3>
       <ul class="flavor-list">
@@ -159,7 +281,6 @@
         <li>Pineapple</li>
       </ul>
     </div>
-
     <div class="flavor-cat">
       <h3>Premium Flavours</h3>
       <ul class="flavor-list">
@@ -183,38 +304,32 @@
 <div class="section" id="testimonials">
   <h2>What Our Customers Say</h2>
   <p style="text-align: center; margin-bottom: 30px; color: #223885;">Rated 4.9/5 by hundreds of happy customers!</p>
-
   <div class="testimonial-grid">
     <div class="testimonial-card">
       <div class="testimonial-text">Amazing taste and good packing! The quality of ice cream is exceptional and you can really taste the pure milk ingredients. Highly recommended!</div>
       <div class="testimonial-author">— Priti Pendke</div>
       <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-text">100% pure milk and no palm oil - you can actually taste the difference! The flavors are rich and authentic. Best ice cream in Nagpur!</div>
       <div class="testimonial-author">— Customer Review, Nagpur</div>
       <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-text">Forget Dinshaw's and the same old flavors. Babulal has innovative ideas and tastes. Try them today!!</div>
       <div class="testimonial-author">— Mayank Patel</div>
       <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-text">Indian Baskin Robbins 🙂</div>
       <div class="testimonial-author">— Sunil Pacholi</div>
       <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-text">The Kesar Lassi and falooda are absolutely delicious! Premium ingredients and authentic taste. Worth every rupee.</div>
       <div class="testimonial-author">— Vedant Dhoot</div>
       <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-text">Been going to Babulal since childhood. The Old Vanilla and Badam Shake bring back so many memories. Quality has remained consistent over the years!</div>
       <div class="testimonial-author">— Loyal Customer, Warora</div>
@@ -225,7 +340,6 @@
 
 <div class="section" id="gallery">
   <h2>Gallery</h2>
-
   <div class="instagram-widget">
     <h3>📸 Follow Us on Instagram</h3>
     <p style="color: #223885; margin-bottom: 20px;">See our latest ice cream creations, happy customers, and behind-the-scenes moments!</p>
@@ -256,6 +370,26 @@
         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
       </svg>
     </a>
+  </div>
+</div>
+
+<div class="section videos-section" id="videos">
+  <h2>Our Latest Videos</h2>
+  <div class="video-container">
+    <video controls src="babulal_icecream_nagpur_04c5754b8c314193b047f0932771039b.mp4" preload="metadata"></video>
+    <video controls src="babulal_icecream_nagpur_8ea4341b9dc742c1b2357adac8d620f4.mp4" preload="metadata"></video>
+    <video controls src="babulal_icecream_nagpur_5d338eaac7304b9b99c4d8b8365fb4d0.mp4" preload="metadata"></video>
+    <video controls src="babulal_icecream_nagpur_a8ba44a43b314fc3bebdb7c365f005c9.mp4" preload="metadata"></video>
+    <video controls src="gourmetmusafir_417c2ff2f17b442387781b852254fbae.mp4" preload="metadata"></video>
+    <video controls src="babulal_icecream_nagpur_e83796063b3047f8911057ebc7ab5c24.mp4" preload="metadata"></video>
+    <video controls src="babulal_icecream_nagpur_81ac6da96c004e0aadf8a41aa3a563be.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.05-PM-1.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.05-PM.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.21-PM.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.19-PM.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.19-PM-1.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.21-PM-1.mp4" preload="metadata"></video>
+    <video controls src="WhatsApp-Video-2025-11-22-at-4.04.22-PM.mp4" preload="metadata"></video>
   </div>
 </div>
 
@@ -300,15 +434,13 @@
 
 <div class="section" id="contact">
   <h2>Visit Us & Get In Touch</h2>
-
   <div class="contact-block">
     <div class="branch">
       <h3>🏠 Main Branch (Warora)</h3>
-      <p><strong>Address:</strong><br>Gandhi Chowk, Warora<br>442907, Maharashtra, India</p>
+      <p><strong>Address:</strong><br>Babulal Icecream<br>Gandhi Chowk, Warora<br>442907, Maharashtra, India</p>
       <p style="margin-top: 15px;"><strong>Contact:</strong><br>📞 Makrand: 9028173111<br>📞 Niraj: 9175020368<br>📞 Ashish: 8446446027</p>
       <a href="https://maps.google.com/?q=Gandhi+Chowk+Warora+Maharashtra+442907" target="_blank">📍 Get Directions</a>
     </div>
-
     <div class="branch">
       <h3>🏪 Nagpur Outlet</h3>
       <p><strong>Address:</strong><br>Babulal Icecream Central Bazar Road,<br>opposite Kalpana Building, beside BRIM,<br>Ramdaspeth, Nagpur, Maharashtra 440010</p>
@@ -316,7 +448,6 @@
       <a href="https://maps.google.com/?q=Babulal+Icecream+Central+Bazar+Road+Ramdaspeth+Nagpur+Maharashtra+440010" target="_blank">📍 Get Directions</a>
     </div>
   </div>
-
   <div class="socials">
     <a href="https://www.instagram.com/babulal_icecream_nagpur/" target="_blank" title="Instagram">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,8 +473,10 @@
 </div>
 
 <footer>
-  &copy; 1968-2025 Babulal Ice Cream. All Rights Reserved.<br>
-  Crafted with love and pure ingredients ❤️
+  <p><strong>&copy; 1968-2025 Babulal Ice Cream. All Rights Reserved.</strong></p>
+  <p>Crafted with love and pure ingredients ❤️</p>
+  <p>Est. 1968 | Founder: Late Shri Babulal Dagaji Chaudhari</p>
+  <p>Email: babulalicecream@gmail.com</p>
 </footer>
 
 </body>
